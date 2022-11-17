@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>App Kalkulator sederhana</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body class="align-items-start pt-0 flex-column">
+  <main role="main" class="container-fluid col-xl-4 col-lg-4 col-md-6 col-sm12 col-12 pt-0 pl-0 pr-0">
+    <div id="container-user d-flex flex-row justify-content-between px-3 py4">
+      <div class="container-user d-flex flex-row justify-content-between px-3 py-4">
+        <div class="content-text flex-column w-100">
+          <p class="bodytext2 color-black500 p-0 m-0" id="dataName">
+            Selamat datang
+          </p>
+          <p class="headline6 color-black500 semibold p-0 m-0">
+            App Kalkulator Sederhana
+          </p>
+        </div>
+        <a class="content-image-profile flex-shrink" href="profile">
+          <div class="frame-image">
+            <img src="assets/images/calculator.png" alt="profile" srcset="" id="dataImage" />
+          </div>
+        </a>
+      </div>
+      <div id="calculator">
+        <div id="result">
+          <div id="history">
+            <p id="history-value"></p>
+          </div>
+          <div id="output">
+            <p id="output-values"></p>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row mb-3">
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-danger btn-circle btn-xl operator" id="clear">C</button>
+            </div>
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-danger btn-circle btn-xl operator" id="backspace">CE</button>
+            </div>
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-dark btn-circle btn-xl operator" id="%">%</button>
+            </div>
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-dark btn-circle btn-xl operator" id="/">/</button>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-gray btn-circle btn-xl number" id="7">7</button>
+            </div>
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-gray btn-circle btn-xl number" id="8">8</button>
+            </div>
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-gray btn-circle btn-xl number" id="9">9</button>
+            </div>
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-dark btn-circle btn-xl operator" id="*">&times;</button>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-gray btn-circle btn-xl number" id="4">4</button>
+            </div>
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-gray btn-circle btn-xl number" id="5">5</button>
+            </div>
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-gray btn-circle btn-xl number" id="6">6</button>
+            </div>
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-dark btn-circle btn-xl operator" id="-">-</button>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-gray btn-circle btn-xl number" id="1">1</button>
+            </div>
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-gray btn-circle btn-xl number" id="2">2</button>
+            </div>
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-gray btn-circle btn-xl number" id="3">3</button>
+            </div>
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-dark btn-circle btn-xl operator" id="+">+</button>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-gray btn-circle btn-xl empty" id="empty"></button>
+            </div>
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-gray btn-circle btn-xl number" id="0">0</button>
+            </div>
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-gray btn-circle btn-xl empty" id="empty"></button>
+            </div>
+            <div class="col-3 col-xs-3">
+              <button class="btn btn-warning btn-circle btn-xl operator" id="=">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/register.js"></script>
+  <script src="service-worker.js"></script>
+</body>
+
+</html>
